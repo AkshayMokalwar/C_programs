@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<conio.h>
+#include<graphics.h>
+void main()
+{
+int gd=DETECT,gm,i,j;
+initgraph(&gd,&gm,"C:\\TURBOC3\\BGI\\");
+for(i=00;i<=660;i=i+20){
+	setcolor(10);
+	line(660-i,0,660,i);
+	setcolor(100);
+	line(i,0,0,i);
+	setcolor(1);
+	line(0,i,660,i);
+	setcolor(1110);
+	line(i,0,i,660);
+    }
+
+
+getch();
+closegraph();
+}
+
